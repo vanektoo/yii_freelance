@@ -6,8 +6,7 @@ use Yii;
 use yii\filters\AccessControl;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
-use app\models\LoginForm;
-use app\models\ContactForm;
+use app\models\Tarif;
 
 class SiteController extends Controller
 {
@@ -49,7 +48,9 @@ class SiteController extends Controller
 
     public function actionIndex()
     {
-        return $this->render('index');
+        $tarifs = Tarif::find()->all();
+        
+        return $this->render('index', compact($tarifs));
     }
 
     public function actionLogin()
