@@ -40,9 +40,9 @@ class Tarif extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'price' => 'Price',
-            'name' => 'Name',
-            'speed' => 'Speed',
+            'price' => 'Цена',
+            'name' => 'Название',
+            'speed' => 'Скорость',
         ];
     }
 }

@@ -6,8 +6,8 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model app\models\Tarif */
 
-$this->title = 'Create Tarif';
-$this->params['breadcrumbs'][] = ['label' => 'Tarifs', 'url' => ['index']];
+$this->title = 'Добавление нового тарифа';
+$this->params['breadcrumbs'][] = ['label' => 'Тарифы', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="tarif-create">
@@ -17,5 +17,6 @@ $this->params['breadcrumbs'][] = $this->title;
     <?= $this->render('_form', [
         'model' => $model,
     ]) ?>
+    
 
 </div>
